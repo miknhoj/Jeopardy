@@ -3,13 +3,13 @@ const player = {
     score: 0
 }
 
-const ScoreDisplay = {
-
-    scoreUpdater: function (score) {
-        $('#score')
-        if ()
+const scoreDisplay = {
+    updateTotalScore: function (score) {
+        $('#score').html(ScoreController)
     }
 }
+
+
 
 
 $(() => {
@@ -32,6 +32,7 @@ $('.incorrect').click(function(event){
     let points = $(event.currentTarget).data('score')
     player.score -= points
 })
+
 
 // Need function that will remove box from the board when a question is answered or change the color. 
 // Probably jQuery click event that changes the color
