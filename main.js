@@ -3,13 +3,9 @@ const player = {
     score: 0
 }
 
-const scoreDisplay = {
-    updateTotalScore: function (score) {
-        $('#score').html(ScoreController)
-    }
+function newFunction() {
+    $("#score").text(player.score)
 }
-
-
 
 
 $(() => {
@@ -25,12 +21,14 @@ $('.correct').click(function(event){
     alert("Correct")
     let points = $(event.currentTarget).data('score')
     player.score += points
+    newFunction()
 })
 
 $('.incorrect').click(function(event){
     alert("Sorry, incorrect")
     let points = $(event.currentTarget).data('score')
     player.score -= points
+    newFunction(points)
 })
 
 
