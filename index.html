@@ -46,8 +46,8 @@
                                     <p>Vibrava</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Pokemon</button>
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Drug</button>
+                                    <button type="button" data-score= 10 class="correct btn btn-primary" data-dismiss="modal">Pokemon</button>
+                                    <button type="button" data-score= 10 class="incorrect btn btn-primary" data-dismiss="modal">Drug</button>
                                 </div>
                             </div>
                         </div>
@@ -98,8 +98,9 @@
                 </div>
         </div>
 
-<div class="container">
+<div id="score-display" class="container">
     Total Score:
+    <span id='score'>00</span>
 </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
