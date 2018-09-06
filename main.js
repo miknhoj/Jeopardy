@@ -25,7 +25,7 @@ function rank(){
             rank = 'Novice'
         } else if (tscore > 120 && tscore < 360) {
             rank = 'Intermediate'
-        } else if (tscore > 360 && tscore < 560) {
+        } else if (tscore > 360 && tscore < 540) {
             rank = 'Expert'
         } else {
             rank = 'Master'
@@ -40,9 +40,7 @@ function rank(){
 // disable button
 
 $('.btn').on('click', function(){
-    console.log("clicked")
     $(event.currentTarget).addClass('disabled', true)
-
 })
 
 
