@@ -1,10 +1,36 @@
+console.log('hello')
+
+// Player object
 const player = {
     name: 'playerone',
     score: 0
 }
 
+// Updating score on html
 function updateTotalScore() {
-    $("#score").text(player.score)
+    $('#score').text(player.score)
+}
+
+// Updating ranking on html
+function rankUpdater(string) {
+$('#ranking').text(string)
+}
+
+function rank(){
+    let rank
+    let tscore = player.score
+        if (tscore <= 0) {
+            rank = 'Beginner'
+        } else if (tscore > 0 && tscore < 120) {
+            rank = 'Novice'
+        } else if (tscore > 120 && tscore < 360) {
+            rank = 'Intermediate'
+        } else if (tscore > 360 && tscore < 560) {
+            rank = 'Expert'
+        } else {
+            rank = 'Master'
+        }
+    rankUpdater(rank)
 }
 
 
@@ -18,6 +44,8 @@ $('.btn').on('click', function(){
     $(event.currentTarget).addClass('disabled', true)
 
 })
+
+
 
 
 $(() => {
@@ -48,6 +76,7 @@ $('.correct').click(function(event){
     let points = $(event.currentTarget).data('score')
     player.score += points
     updateTotalScore()
+    rank()
 })
 
 
@@ -55,7 +84,8 @@ $('.incorrect').click(function(event){
     alert("Sorry, incorrect")
     let points = $(event.currentTarget).data('score')
     player.score -= points
-    updateTotalScore(points)
+    updateTotalScore()
+    rank()
 })
 
 

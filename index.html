@@ -8,13 +8,8 @@
     <title>Jeopardy</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" src="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<style>
-    .disabled{
-        pointer-events: none;
-    }
-</style>
 <body>
     <div class="container-fluid">
         <header class="text-center text-white bg-primary px-5 py-3">
@@ -420,7 +415,7 @@
                                     <button type="button" data-score="40" class="incorrect btn btn-primary"
                                         data-dismiss="modal">Alola</button>
                                     <button type="button" data-score="40" class="correct btn btn-primary"
-                                        data-dismiss="modal">Kalos/button>
+                                        data-dismiss="modal">Kalos</button>
                                 </div>
                             </div>
                         </div>
@@ -532,6 +527,11 @@
     <div class="container-fluid text-center">
         Total Score:
         <span id='score'>00</span>
+    </div>
+
+    <div class="container-fluid text-center">
+        Trainer Ranking: 
+        <span id='ranking'>New Player</span>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
