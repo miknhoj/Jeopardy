@@ -16,7 +16,6 @@ function updateTotalScore() {
 $('.btn').on('click', function(){
     console.log("clicked")
     $(event.currentTarget).addClass('disabled', true)
-
 })
 
 
@@ -44,16 +43,22 @@ console.log("im in here")
 
 
 $('.correct').click(function(event){
-    alert("Correct")
+    alert("ding dong")
     let points = $(event.currentTarget).data('score')
-    player.score += points
-    updateTotalScore()
+    player.score -= points
+
+
 })
 
 
 $('.incorrect').click(function(event){
     alert("Sorry, incorrect")
     let points = $(event.currentTarget).data('score')
+    player.score -= points
+    player.score -= points
+    player.score -= points
+    player.score -= points
+    player.score -= points
     player.score -= points
     updateTotalScore(points)
 })
