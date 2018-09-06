@@ -8,6 +8,18 @@ function updateTotalScore() {
 }
 
 
+
+//create click event on the gameboard
+// get the specific target of the click
+// disable button
+
+$('.btn').on('click', function(){
+    console.log("clicked")
+    $(event.currentTarget).addClass('disabled', true)
+
+})
+
+
 $(() => {
 console.log("im in here")
 
@@ -26,8 +38,8 @@ console.log("im in here")
 // })
 
 // $('.btn').on('click', function() {
-//     alert('hey this happens first')
-//     $(this).attr('disabled', 'disabled')
+//     // alert('hey this happens first')
+//     $(this).attr('disabled', 'true')
 // })
 
 
@@ -35,7 +47,6 @@ $('.correct').click(function(event){
     alert("Correct")
     let points = $(event.currentTarget).data('score')
     player.score += points
-    $('.btn').attr('disabled')
     updateTotalScore()
 })
 

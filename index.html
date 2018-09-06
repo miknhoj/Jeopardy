@@ -10,11 +10,15 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" src="style.css">
 </head>
-
+<style>
+    .disabled{
+        pointer-events: none;
+    }
+</style>
 <body>
     <div class="container-fluid">
         <header class="text-center text-white bg-primary px-5 py-3">
-            <h1 class="display-3">Jeopardy</h1>
+            <h1 id="yo" class="display-3">Jeopardy</h1>
         </header>
     </div>
 
@@ -41,7 +45,7 @@
             <div class="row">
                 <div class="col-sm">
                     <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#r1c1">10</button>
-                    <div class="modal fade none" id="r1c1" role="dialog">
+                    <div class="modal fade" id="r1c1" role="dialog">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -463,7 +467,7 @@
                                     <button type="button" data-score="50" class="correct btn btn-primary"
                                         data-dismiss="modal">Omanyte</button>
                                     <button type="button" data-score="50" class="incorrect btn btn-primary"
-                                        data-dismiss="modal">BKabuto</button>
+                                        data-dismiss="modal">Kabuto</button>
                                     <button type="button" data-score="50" class="incorrect btn btn-primary"
                                         data-dismiss="modal">Ditto</button>
                                 </div>
@@ -522,36 +526,8 @@
             </div>
         </div>
     </div>
-    <!-- <table class="table text-center">
-            <thead>
-              <tr>
-                <th scope="col">Drug or Pokemon</th>
-                <th scope="col">Category 2</th>
-                <th scope="col">Category 3</th>
-                <th scope="col">Category 4</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>10</td>
-                <td>10</td>
-                <td>10</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>20</td>
-                <td>20</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>30</td>
-                <td>30</td>
-                <td>30</td>
-                <td>30</td>
-              </tr>
-            </tbody>
-          </table> -->
+
+
 
     <div class="container-fluid text-center">
         Total Score:

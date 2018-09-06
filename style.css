@@ -1,3 +1,8 @@
-.none {
-    display: none;
+.disabled {
+    pointer-events: none;
 }
+
+#yo {
+    color: black;
+}
+
