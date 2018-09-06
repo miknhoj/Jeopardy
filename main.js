@@ -17,12 +17,27 @@ console.log("im in here")
 // Probably an if statement !== / ===
 // Use data-tag
 
+// $('.btn').one('click',function (){
+//     var dataTarget = $(this).attr('data-target')
+//     console.log(dataTarget)
+//     setTimeout(function() {
+//         console.log("INSIDE SETTIMEOUT")
+//         $().attr('disabled', 'disabled')}, 2000)
+// })
+
+// $('.btn').on('click', function() {
+//     alert('hey this happens first')
+//     $(this).attr('disabled', 'disabled')
+// })
+
+
 $('.correct').click(function(event){
     alert("Correct")
     let points = $(event.currentTarget).data('score')
     player.score += points
     newFunction()
 })
+
 
 $('.incorrect').click(function(event){
     alert("Sorry, incorrect")
