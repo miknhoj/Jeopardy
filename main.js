@@ -17,17 +17,17 @@ $('#ranking').text(string)
 }
 
 function rank(){
-    let rank = 
+    let rank
     let tscore = player.score
         if (tscore <= 0) {
             rank = 'Beginner'
-        } else if (tscore > 0 && score < 120) {
+        } else if (tscore > 0 && tscore < 120) {
             rank = 'Novice'
-        } else if (tscore > 120 && score < 360) {
+        } else if (tscore > 120 && tscore < 360) {
             rank = 'Intermediate'
-        } else if (tscore > 360 && score < 560) {
+        } else if (tscore > 360 && tscore < 560) {
             rank = 'Expert'
-        } else (tscore > 560) {
+        } else {
             rank = 'Master'
         }
     rankUpdater(rank)
@@ -76,6 +76,7 @@ $('.correct').click(function(event){
     let points = $(event.currentTarget).data('score')
     player.score += points
     updateTotalScore()
+    rank()
 })
 
 
@@ -84,6 +85,7 @@ $('.incorrect').click(function(event){
     let points = $(event.currentTarget).data('score')
     player.score -= points
     updateTotalScore()
+    rank()
 })
 
 
