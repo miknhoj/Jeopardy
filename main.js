@@ -19,15 +19,15 @@ function rankUpdater(string) {
 function rank() {
   let rank;
   let tscore = player.score;
-  if (tscore < 0) {
+  if (tscore <= 0) {
     rank = "Beginner";
-  } else if (tscore > 0 && tscore < 120) {
+  } else if (tscore > 0 && tscore <= 120) {
     rank = "Novice";
-  } else if (tscore > 120 && tscore < 360) {
+  } else if (tscore > 120 && tscore <= 360) {
     rank = "Intermediate";
   } else if (tscore > 360 && tscore < 500) {
     rank = "Expert";
-  } else if (score > 500) {
+  } else {
     rank = "Master";
   }
   rankUpdater(rank);
