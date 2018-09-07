@@ -1,58 +1,59 @@
 .disabled {
-    pointer-events: none;
+  pointer-events: none;
 }
 
-body{
-    background-color: #FF0000;
+body {
+  background-color: #ff0000;
 }
 
-header{
-    background-color: #FF0000;
+header {
+  background-color: #ff0000;
 }
 
 .row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-    grid-auto-rows: minmax(80px, 70px);
-    grid-auto-columns: minmax(70px, 50px);
-    line-height: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(80px, 70px);
+  grid-auto-columns: minmax(70px, 50px);
+  line-height: 20px;
+}
 
 .btn-md {
-    padding: 20px 60px;
-    background-color: #3B4CCA;
-    border: 3px solid #FFDE00
+  padding: 20px 60px;
+  background-color: #3b4cca;
+  border: 3px solid #ffde00;
 }
 
 .col {
-    min-width: 60px;
-    padding: 40px;
+  min-width: 60px;
+  padding: 40px;
 }
 
 .category {
-    color: #FFDE00;
-    font-weight: bold;
-    font-size: 20px;
-    padding-top: 15px;
-    min-width: 170px;
-    border: 4px solid #FFDE00;
-    background-color: #3B4CCA
+  color: #ffde00;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+  min-width: 170px;
+  border: 4px solid #ffde00;
+  background-color: #3b4cca;
 }
 
-.score{
-    color: #FFDE00;
-    font-weight: 900;
-    font-size: 25px;
-    -webkit-text-stroke-color: #3B4CCA;
-    -webkit-text-stroke-width: 2px;
+.score {
+  color: #ffde00;
+  font-weight: 900;
+  font-size: 35px;
+  -webkit-text-stroke-color: #3b4cca;
+  -webkit-text-stroke-width: 2px;
 }
 
 .rank {
-    color: #FFDE00;
-    font-weight: 900;
-    font-size: 25px;
-    -webkit-text-stroke-color: #3B4CCA;
-    -webkit-text-stroke-width: 2px;
-    padding-bottom: 50px;
+  color: #ffde00;
+  font-weight: 900;
+  font-size: 25px;
+  -webkit-text-stroke-color: #3b4cca;
+  -webkit-text-stroke-width: 2px;
+  padding-bottom: 10px;
 }
+
