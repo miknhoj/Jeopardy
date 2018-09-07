@@ -19,4 +19,4 @@ Technologies used
 - jQuery
 
 Version 2
-For version 2, I would try making it without Bootstrap and creating my own CSS. I would also try us jQuery to set up my questions and answers that get injected into the html off of a button click event to reduce the lines of code in my html. 
+For version 2, I would try making it without Bootstrap and creating my own CSS. I would also try us jQuery to set up my questions and answers that get injected into the html off of a button click event to reduce the lines of code in my html. Also, I would like to add high score board where it records the scores of those who played. 
