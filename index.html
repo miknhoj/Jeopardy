@@ -10,27 +10,32 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div class="container-fluid">
-        <header class="text-center text-white bg-primary px-5 py-3">
-            <h1 id="yo" class="display-3">Jeopardy</h1>
+    <div class="container">
+        <header class="text-center text-white px-5 py-3">
+            <!-- <h1 class="display-3">Jeopardy</h1> -->
+            <!-- <img id="ball" src="Images/original_pokeball_vector_by_greenmachine987-dapbbed.png"> -->
+            <img src="https://fontmeme.com/permalink/180906/002d60004702e6e93e82fa3bee891003.png">
         </header>
     </div>
 
+
+
     <div id="boardGame" class="container-fluid text-center">
         <!-- Row - Category -->
-        <div class="container-fluid">
+        <!-- <div class="container-fluid"> -->
             <div class="row">
-                <div class="col-sm">
+                <div class="col-sm category">
                     Drug or Pokemon
                 </div>
-                <div class="col-sm">
+                <div class="col-sm category">
                     Who's that Pokemon?
                 </div>
-                <div class="col-sm">
+                <div class="col-sm category">
                     Gym Leaders
                 </div>
-                <div class="col-sm">
+                <div class="col-sm category">
                     Region
                 </div>
             </div>
@@ -524,14 +529,14 @@
 
 
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center score">
         Total Score:
         <span id='score'>00</span>
     </div>
 
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center rank">
         Trainer Ranking: 
-        <span id='ranking'>New Player</span>
+        <span id='ranking'>New Trainer</span>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
