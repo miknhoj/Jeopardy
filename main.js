@@ -25,7 +25,7 @@ function rank() {
     rank = "Novice";
   } else if (tscore > 120 && tscore < 360) {
     rank = "Intermediate";
-  } else if (tscore > 360 && tscore < 540) {
+  } else if (tscore > 360 && tscore < 500) {
     rank = "Expert";
   } else {
     rank = "Master";
@@ -64,7 +64,7 @@ $(() => {
   // })
 
   $(".correct").click(function(event) {
-    alert("Correct");
+    swal("Correct");
     let points = $(event.currentTarget).data("score");
     player.score += points;
     updateTotalScore();
@@ -72,7 +72,7 @@ $(() => {
   });
 
   $(".incorrect").click(function(event) {
-    alert("Sorry, incorrect");
+    swal("Sorry, incorrect");
     let points = $(event.currentTarget).data("score");
     player.score -= points;
     updateTotalScore();
