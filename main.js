@@ -82,7 +82,4 @@ $(() => {
   // Need function that will remove box from the board when a question is answered or change the color.
   // Probably jQuery click event that changes the color
 
-  //
-
-  // $('')
 });
